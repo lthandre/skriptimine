@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# Enda tutvustamine ja enda kohta rääkimine
+#
+echo -n "Andre Arumäe, " # väljastab nime, rida ei vaheta
+echo "ISP118, " # väljasta grupi, rida ei vaheta
+echo "Aine on väga tore." # väljastab arvamuse, vahetab rida
+echo "Võib nii palju öelda, et kui koolis käia, siis maha millegagi ei jää." # väljastab edasijõudmise, vahetab rida
+#
+# skripti lõpp
