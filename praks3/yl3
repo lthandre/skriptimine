@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# Näitab kuupäeva ja kalendrit
+#
+echo -n "Today is " # kirjutab
+echo `date +"%A, %B %d, %Y"` # Näitab päeva
+echo -n "Time is "
+echo `date +"%T"` # näitab kella
+echo " "
+echo -n "Calendar of"
+cal # näitab kalendrit
+#
+# skripti lõpp
