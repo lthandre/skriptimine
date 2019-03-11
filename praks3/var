@@ -1,0 +1,4 @@
+#!/bin/bash
+#
+find /var -name "*.log*" -type f 2>/dev/null -exec wc -l {} + | sort -rn # leiab kõik log failid var kaustast ja sordib need ridade arvu järgi suurimast väiksemaks
+# skripti lõpp
