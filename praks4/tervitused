@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+#Küsib kasutaja ees- ja perenime ning see järel tervitab teda.
+#
+echo -n "Sisesta oma ees- ja perenimi:"
+read eesnimi perenimi
+echo "Tere tulemast saatesse, $eesnimi $perenimi. Palun tee meile tuttavaks, kes sinuga täna kaasas on!"
+# skripti lõpp
