@@ -19,6 +19,6 @@ tpindala=`expr $a \* $b`
 kpindala=`expr $c \* $d`
 kiht=`expr $tpindala \/ $kpindala`
 kupsised=`expr $kiht \* $e`
-pakk=`expr $kupsised \/ $f`
+pakk=$((($kupsised/$f) + ($kupsised % $f > 0)))
 echo "Tordi valmistamiseks on teil vaja $pakk pakki küpsiseid või $kupsised küpsist"
 # skripti lõpp
