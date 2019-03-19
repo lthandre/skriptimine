@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+#näitab mitu päeva on süsteem töötand
+
+echo -n "skriptimine at "
+echo -n `date '+%X'` " "
+uptime -p
+#
+# skripti lõpp
