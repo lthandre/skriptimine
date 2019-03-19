@@ -2,23 +2,11 @@
 #
 #Bussi ekskursiooni korraldaja tööriist
 #
-echo -n "Sisesta kandiku laius sentimeetrites: "
+echo -n "Mitu inimest tuleb ekskursioonile? "
 read a
-echo -n "Sisesta kandiku pikkus sentimeetrites: "
+echo -n "Mitu kohta on bussides? "
 read b
-echo -n "Sisesta küpsise laius sentimeetrites: "
-read c
-echo -n "Sisesta küpsise pikkus sentimeetrites: "
-read d
-echo -n "Sisesta mitu kihti on tordil: "
-read e
-echo -n "Sisesta mitu küpsist on ühes pakis: "
-read f
 
-tpindala=`expr $a \* $b`
-kpindala=`expr $c \* $d`
-kiht=`expr $tpindala \/ $kpindala`
-kupsised=`expr $kiht \* $e`
-pakk=`expr $kupsised \/ $f`
-echo "Tordi valmistamiseks on teil vaja $pakk pakki küpsiseid või $kupsised küpsist"
+bussidearv=$((($a / $b) + ( $a % $b > 0)))
+echo "Ekskursiooni jaoks on teil vaja $bussidearv bussi"
 # skripti lõpp
