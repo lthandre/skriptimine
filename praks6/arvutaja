@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# Paaris ja mitte paaris aruvde kontrollija
+#
+echo "sisesta suvaline täisarv: "
+read a
+if (($a % 2 == 0 ))
+then
+echo "see on paarisarv"
+else
+echo "see on paarituarv"
+fi
+#
+# skripti lõpp
+#
