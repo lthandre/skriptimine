@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# busside arvutaja
+#
+echo "sisesta reisijate arv: "
+read reisjad
+echo "sisesta kohtade arv bussis: "
+read kohad
+a=$(($reisjad / $kohad))
+b=$(($reisjad % $kohad)) #Arvutab jäägi
+if test $b -gt 0
+then
+a=$(($a + 1))
+fi
+echo "kokku on vaja $a bussi"
+#
+# skripti lõpp
+#
