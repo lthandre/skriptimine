@@ -2,13 +2,13 @@
 #
 # Paaris ja mitte paaris aruvde kontrollija
 #
-echo "sisesta suvaline täisarv: "
+echo "Sisesta suvaline täisarv: "
 read a
 if (($a % 2 == 0 ))
 then
-echo "see on paarisarv"
+echo "$a on paarisarv."
 else
-echo "see on paarituarv"
+echo "$a on paarituarv."
 fi
 #
 # skripti lõpp
