@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+#Aastaaeg kuu numbri põhjal
+#
+echo -n "Sisestage praeguse kuu number:"
+read kuu
+if test $kuu -eq 1 -o $kuu -eq 2 -o $kuu -eq 12
+then 
+echo "Väljas on talvine"
+elif test $kuu -ge 3 -a $kuu -le 5
+then
+echo "Väljas on kevadine"
+elif test $kuu -ge 6 -a $kuu -le 8
+then
+echo "Väljas on suvine"
+elif test $kuu -ge 9 -a $kuu -le 11
+then 
+echo "Väljas on sügiseine" 
+else 
+echo "Meil on siiski 12 kuud kalendris."
+fi
+#
