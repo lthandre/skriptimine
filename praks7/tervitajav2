@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+#
+echo -e "sisesta kella aeg"
+read aeg
+if [ "$aeg" -ge 6 ] && [ "$aeg" -lt 12 ]
+then echo "Tere Hommikust" `whoami`"!"
+elif [ "$aeg" -ge 12 ] && [ "$aeg" -lt 18 ]
+then echo "Tere Päevast" `whoami`"!"
+elif [ "$aeg" -ge 18 ] && [ "$aeg" -lt 22 ]
+then echo "Tere õhtust" `whoami`"!"
+elif [ "$aeg" -ge 22 ] && [ "$aeg" -lt 25 ]
+then echo "Head ööd" `whoami`"!"
+elif [ "$aeg" -ge 0 ] && [ "$aeg" -lt 6 ]
+then echo "Head ööd" `whoami`"!"
+else echo "Vale sisend!"
+fi
+#
