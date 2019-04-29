@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+#Ea arvaja vastavalt vanusele
+#
+echo "sisesta oma vanus"
+read vanus 
+if [ "$vanus" -ge 0 ] && [ "$vanus" -le 11 ]; then
+echo "Sa oled laps" 
+elif [ "$vanus" -ge 12 ] && [ "$vanus" -le 18 ]; then
+echo "sa oled nooruk"
+elif [ "$vanus" -ge 18 ] && [ "$vanus" -le 63 ]; then
+echo "sa oled täiskasvanu"
+elif [ "$vanus" -ge 63 ]; then
+echo "sa oled senjoor"
+else
+echo "vigane sisend"
+fi
+#
