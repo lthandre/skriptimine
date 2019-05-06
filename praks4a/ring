@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+echo "Sisesta oma ringi raadius sentimeetrites"
+echo -n "(Kui arv on komaga, kasuta koma asemel punkti, nt: 5,5 ---> 5.5) :"
+read raadius
+diameeter=$(echo "$raadius * 2" | bc)
+pindala=$(echo "3.14 * ($raadius * $raadius)" | bc)
+umbermoot=$(echo "3.14 * $diameeter" | bc)
+echo " "
+echo "Sinu ringi pindala on $pindala cm ja ümbermõõt on $umbermoot cm"
+echo " "
+#
+
