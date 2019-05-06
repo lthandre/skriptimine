@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+echo "Mis on sinu nimi?"
+read nimi
+echo "Tere $nimi, sisesta oma sünniaasta:"
+read sa
+y=$(date +"%Y") #väljastab praeguse aasta
+s=`expr $y - $sa` #praegune aasta - sünniaasta
+echo "$nimi, sina oled $s aastat vana."
+#
+#
+
