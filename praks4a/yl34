@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#
+echo -n "Sisesta kataloogi nimi millest soovid teha backupi:" #küsib backupi tegemiseks kausta nime millest soovitakse teha backupi
+read kataloog
+k=$(echo $kataloog | awk -F/ '{print $NF}')
+tar -czf $k.tar.gz $kataloog
+mv $k.tar.gz /home/andscript/skriptimine/praks4a/backup
+echo "Backup-i nimi kataloogist '$kata' on $k.tar.gz ja tema asukoht on /home/andscript/skriptimine/praks4a/backup" #skripti tegevust selgitav osa
+#
