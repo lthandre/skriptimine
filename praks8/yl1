@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+#
+echo -n "Sisesta arv:"
+read arv
+summa=0
+for (( arv=1; arv<11; arv++ ))
+do
+jaak=$(($arv % 2))
+if [ $jaak == 0 ]; then
+summa=$(( $summa+$arv ))
+echo $summa
+fi
+done
+echo "Arvude vahemikus 1 kuni 10 (kaasaarvutatud) paarisarvude summa on: $summa" #vastus
+#
